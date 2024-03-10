@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Rock Paper Scissor Game</title>
+</head>
+<link rel="stylesheet" href="rockpaperscissor.css">
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <!--Math.random() generates the random number between 0 &1 -->
+    <button class="button-shape" onclick="
+        playGame('rock');
+        "><img class="images" src="rock-emoji.png"></button>
+
+    <button class="button-shape" onclick="
+        playGame('paper');
+        "><img class ="images" src="paper-emoji.png"></button>
+
+    <button class="button-shape" onclick="
+        playGame('scissors');
+        "><img class="images" src="scissors-emoji.png"></button>
+
+        <p class="js-result resultclass"></p>
+        <p class="js-moves"></p>
+        <p class="js-score classcore"></p>
+    
+    <button class="resetbutton" onclick="
+        score.Wins=0;
+        score.Losses=0;
+        score.Tie=0;
+        //alert(`The score is reset.
+//Wins:${score.Wins},Losses:${score.Losses},Ties:${score.Tie}`);
+
+        gameScore();//Here we used the gameScore() to display the score after reset score
+    "><b>Reset Score</b></button>
+
+    <script src="rockpaperscissor.js">
+       
+    </script>
+</body>
+
+</html>
